@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="10"
+    tools:context="com.mycompany.miniproject.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/testGrid"
+            android:text = "Recipes Book"
+            android:textSize="34sp"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_weight="8"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <ImageView
+                android:src="@drawable/bg1"
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:id="@+id/vegButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:text="Vegetarian"/>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/veg"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="191dp" />
+
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <ImageView
+                android:src="@drawable/bg1"
+                android:layout_width="186dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/veganButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:text="Vegan"/>
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="179dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/vegan" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--
+        <android.support.v7.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <ImageView
+                android:src="@drawable/bg1"
+                android:layout_width="186dp"
+                android:layout_height="200dp" />
+            <Button
+                android:id="@+id/seafoodButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:text="Sea Food"/>
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/seafood"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width = "0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <ImageView
+                android:src="@drawable/bg1"
+                android:layout_width="186dp"
+                android:layout_height="200dp" />
+            <Button
+                android:id="@+id/meatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:text="meat"/>
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/meat"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        -->
+
+    </GridLayout>
+</LinearLayout>
